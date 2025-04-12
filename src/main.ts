@@ -7,8 +7,7 @@ async function bootstrap() {
 
     console.log(`Server is running on port ${process.env.PORT ?? 3001}`);
     console.log(`http://localhost:${process.env.PORT ?? 3001}`);
-    console.log(`http://localhost:${process.env.PORT ?? 3001}/api`);
-    console.log(`http://localhost:${process.env.PORT ?? 3001}/api/docs`);
+    console.log(`http://localhost:${process.env.PORT ?? 3001}/docs`);
   });
 }
 void bootstrap();
