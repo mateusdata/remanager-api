@@ -1,3 +1,5 @@
+import { Role } from "@prisma/client";
+
 export class CreateUsersDto {
   name: string;
   email: string
@@ -5,7 +7,7 @@ export class CreateUsersDto {
   age: number;
   profileImage: string;
   phoneNumber: string;
-  role: string;
+  role: Role;
   isActive: boolean;
   deleteAt: boolean;
   createdAt: Date;

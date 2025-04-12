@@ -8,7 +8,7 @@ CREATE TABLE "User" (
     "profileImage" TEXT,
     "phoneNumber" TEXT,
     "role" TEXT NOT NULL DEFAULT 'USER',
-    "isActive" BOOLEAN NOT NULL DEFAULT true,
+    "isActive" BOOLEAN DEFAULT true,
     "deletedAt" DATETIME,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" DATETIME NOT NULL

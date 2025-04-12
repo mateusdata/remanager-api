@@ -1,2 +1,49 @@
 ### Buscar todos os usuários
 GET http://localhost:3001/users HTTP/1.1
+
+
+### Cadastrar usuarios
+
+POST http://localhost:3001/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Mateus Santos",
+    "email": "mateuss@email.com",
+    "password": "123456",
+    "age": 25,
+    "profileImage": "https://example.com/profile.jpg",
+    "phoneNumber": "+5511999999999",
+    "role": "ADMIN",
+    "isActive": true
+   
+  }
+
+### Buscar usuario especifico
+
+GET http://localhost:3001/users/  HTTP/1.1
+
+
+
+### Atualizar usuario
+  
+PATCH http://localhost:3001/users/1  HTTP/1.1  HTTP/1.1
+
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Mateus Santos",
+    "email": "mateus@email.com",
+    "age": 25,
+    "profileImage": "https://example.com/profile.jpg",
+    "phoneNumber": "+5511999999999",
+    "role": "ADMIN",
+    "isActive": true,
+    "deleteAt": false,
+    "createdAt": "2025-04-12T00:00:00.000Z",
+    "updateAt": "2025-04-12T00:00:00.000Z"
+  }
+
+### Remover um usuario especifico
+DELETE  http://localhost:3001/users/1  HTTP/1.1
